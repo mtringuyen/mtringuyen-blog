@@ -1,8 +1,8 @@
-box: debian
+box: golang:latest
 build:
   steps:
-    - sigma/hugo-build
-        version: "1.18.0"
+    - arjen/hugo-build:
+        version: "HEAD"
         theme: herring-cove
         flags: --buildDrafts=true
 deploy:
